@@ -1,0 +1,23 @@
+package Visão;
+
+import Modelo.Mercadoria;
+import java.util.Locale;
+import javax.swing.JOptionPane;
+
+
+public class ResultadoDaPintura {
+    
+    public static void main(String[] args){
+        Locale.setDefault(Locale.US);
+        
+        Mercadoria produto = new Mercadoria();
+        
+        produto.setAltura(Double.parseDouble(JOptionPane.showInputDialog(null,"Digite a altura da parede")));
+        produto.setLargura(Double.parseDouble(JOptionPane.showInputDialog(null,"Digite a largura da parede")));
+        
+        
+        produto.calcularValorArea();
+        
+        JOptionPane.showMessageDialog(null, "O valor da área é: " + String.format("%.2f", produto.getValorArea()));
+    }
+}
