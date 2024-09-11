@@ -1,0 +1,78 @@
+package Modelo;
+
+public class Mercadoria {
+    private double altura;
+    private double largura;
+    private double area;
+    private static double CONSUMO_TINTA_POR_METRO = 0.3; // 300 ml = 0.3 litros
+    private static double LITROS_POR_LATA = 2.0;
+    private double quantidadeLatas;
+    private double totalTintaNecessaria;
+
+// Método para calcular a area
+    public void calcularValorArea() {
+        this.area = this.altura * this.largura;
+    }
+
+    public double getValorArea() {
+        return area;
+    }
+    
+    
+        
+    public double getAltura() {
+        return altura;
+    }
+
+    public void setAltura(double altura) {
+        this.altura = altura;
+    }
+
+    public double getLargura() {
+        return largura;
+    }
+
+    public void setLargura(double largura) {
+        this.largura = largura;
+    }
+
+    public double getArea() {
+        return area;
+    }
+
+    public void setArea(double area) {
+        this.area = area;
+    }
+
+    public double getCONSUMO_TINTA_POR_METRO() {
+        return CONSUMO_TINTA_POR_METRO;
+    }
+
+    public void setCONSUMO_TINTA_POR_METRO(double CONSUMO_TINTA_POR_METRO) {
+        this.CONSUMO_TINTA_POR_METRO = CONSUMO_TINTA_POR_METRO;
+    }
+
+    public double getLITROS_POR_LATA() {
+        return LITROS_POR_LATA;
+    }
+
+    public void setLITROS_POR_LATA(double LITROS_POR_LATA) {
+        this.LITROS_POR_LATA = LITROS_POR_LATA;
+    }
+
+    public double getQuantidadeLatas() {
+        return quantidadeLatas;
+    }
+
+    public void setQuantidadeLatas(double quantidadeLatas) {
+        this.quantidadeLatas = quantidadeLatas;
+    }
+
+    public double getTotalTintaNecessaria() {
+        return totalTintaNecessaria;
+    }
+
+    public void setTotalTintaNecessaria(double totalTintaNecessaria) {
+        this.totalTintaNecessaria = totalTintaNecessaria;
+    }
+}
